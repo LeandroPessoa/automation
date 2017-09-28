@@ -1,0 +1,35 @@
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(18, GPIO.OUT)           # set GPIO24 as an output
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(18, GPIO.OUT)           # set GPIO24 as an output
+ * Debugger is active!
+ * Debugger PIN: 311-049-750
+192.168.0.102 - - [16/Sep/2017 03:12:52] "GET /liga HTTP/1.1" 200 -
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(18, GPIO.OUT)           # set GPIO24 as an output
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(18, GPIO.OUT)           # set GPIO24 as an output
+Traceback (most recent call last):
+  File "light.py", line 5, in <module>
+    from flask import Flask
+  File "/usr/local/lib/python2.7/dist-packages/flask/__init__.py", line 17, in <module>
+    from werkzeug.exceptions import abort
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/__init__.py", line 151, in <module>
+    __import__('werkzeug.exceptions')
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/exceptions.py", line 71, in <module>
+    from werkzeug.wrappers import Response
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/wrappers.py", line 26, in <module>
+    from werkzeug.http import HTTP_STATUS_CODES, \
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/http.py", line 22, in <module>
+    from email.utils import parsedate_tz
+  File "/usr/lib/python2.7/email/utils.py", line 27, in <module>
+    import random
+  File "/usr/lib/python2.7/random.py", line 49, in <module>
+    import hashlib as _hashlib
+  File "/usr/lib/python2.7/hashlib.py", line 134, in <module>
+    import _hashlib
+KeyboardInterrupt
