@@ -7,12 +7,12 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/pcliga')
-def liga():
+def ligapc():
     GPIO.output(23, 0)
     return "Liga
 
 @app.route('/pcdesliga')
-def liga():
+def desligapc():
     GPIO.output(23, 1)
     return "Desliga"
 
