@@ -33,3 +33,7 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/hashlib.py", line 134, in <module>
     import _hashlib
 KeyboardInterrupt
+  File "light.py", line 12
+    return "Liga
+               ^
+SyntaxError: EOL while scanning string literal

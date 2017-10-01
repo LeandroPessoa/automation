@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/pcliga')
 def ligapc():
     GPIO.output(23, 0)
-    return "Liga
+    return "Liga"
 
 @app.route('/pcdesliga')
 def desligapc():
