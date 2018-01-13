@@ -1,9 +1,11 @@
 import RPi.GPIO as GPIO            # import RPi.GPIO module  
 from time import sleep             # lets us have a delay  
+
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 GPIO.setup(27, GPIO.OUT)
 GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output 
 from flask import Flask
+from flask import render_template
 app = Flask(__name__)
 
 @app.route('/pcliga')
