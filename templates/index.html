@@ -4,10 +4,11 @@
   <title>Jarvis</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <script src="bootstrap/js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('bootstrap', filename='css/bootstrap.min.css') }}">
+  <script src="{{ url_for('bootstrap', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('bootstrap', filename='js/bootstrap.min.js') }}"></script>
+
+  <link rel="stylesheet" href="{{ url_for('bootstrap', filename='css/font-awesome.min.css') }}">
    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 </head>
