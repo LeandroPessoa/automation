@@ -37,3 +37,132 @@ KeyboardInterrupt
     return "Liga
                ^
 SyntaxError: EOL while scanning string literal
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+Traceback (most recent call last):
+  File "light.py", line 6, in <module>
+    from flask import Flask
+  File "/usr/local/lib/python2.7/dist-packages/flask/__init__.py", line 17, in <module>
+    from werkzeug.exceptions import abort
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/__init__.py", line 151, in <module>
+    __import__('werkzeug.exceptions')
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/exceptions.py", line 71, in <module>
+    from werkzeug.wrappers import Response
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/wrappers.py", line 26, in <module>
+    from werkzeug.http import HTTP_STATUS_CODES, \
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/http.py", line 22, in <module>
+    from email.utils import parsedate_tz
+  File "/usr/lib/python2.7/email/utils.py", line 28, in <module>
+    import socket
+  File "/usr/lib/python2.7/socket.py", line 53, in <module>
+    import _ssl
+KeyboardInterrupt
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+Traceback (most recent call last):
+  File "light.py", line 6, in <module>
+    from flask import Flask
+  File "/usr/local/lib/python2.7/dist-packages/flask/__init__.py", line 21, in <module>
+    from .app import Flask, Request, Response
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 26, in <module>
+    from . import json, cli
+  File "/usr/local/lib/python2.7/dist-packages/flask/cli.py", line 17, in <module>
+    import click
+  File "/usr/local/lib/python2.7/dist-packages/click/__init__.py", line 34, in <module>
+    from .utils import echo, get_binary_stream, get_text_stream, open_file, \
+KeyboardInterrupt
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site.py", line 554, in <module>
+    main()
+  File "/usr/lib/python2.7/site.py", line 536, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/usr/lib/python2.7/site.py", line 272, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/usr/lib/python2.7/site.py", line 247, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/usr/lib/python2.7/site.py", line 237, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/usr/lib/python2.7/sysconfig.py", line 582, in get_config_var
+    return get_config_vars().get(name)
+  File "/usr/lib/python2.7/sysconfig.py", line 509, in get_config_vars
+    import re
+  File "/usr/lib/python2.7/re.py", line 105, in <module>
+    import sre_compile
+  File "/usr/lib/python2.7/sre_compile.py", line 12, in <module>
+    """Internal support module for sre"""
+KeyboardInterrupt
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+Traceback (most recent call last):
+  File "light.py", line 6, in <module>
+    from flask import Flask
+  File "/usr/local/lib/python2.7/dist-packages/flask/__init__.py", line 21, in <module>
+    from .app import Flask, Request, Response
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 19, in <module>
+    from werkzeug.routing import Map, Rule, RequestRedirect, BuildError
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 418, in <module>
+    class RuleTemplate(object):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "light.py", line 6, in <module>
+    from flask import Flask
+  File "/usr/local/lib/python2.7/dist-packages/flask/__init__.py", line 17, in <module>
+    from werkzeug.exceptions import abort
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/__init__.py", line 137, in <module>
+    new_module = sys.modules['werkzeug'] = module('werkzeug')
+KeyboardInterrupt
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+light.py:4: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(27, GPIO.OUT)
+light.py:5: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output
+ * Debugger is active!
+ * Debugger PIN: 974-741-752
+192.168.0.101 - - [17/Oct/2017 00:52:43] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:44] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:45] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:46] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:46] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:46] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:46] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:47] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:49] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:50] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:51] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:51] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:52] "GET /desliga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:52] "GET /liga HTTP/1.1" 200 -
+192.168.0.101 - - [17/Oct/2017 00:52:52] "GET /desliga HTTP/1.1" 200 -
+Exception in thread Thread-1 (most likely raised during interpreter shutdown):
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 702, in inner
+  File "/usr/local/lib/python2.7/dist-packages/werkzeug/serving.py", line 539, in serve_forever
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+  File "/usr/lib/python2.7/threading.py", line 585, in set
+  File "/usr/lib/python2.7/threading.py", line 407, in notifyAll
+<type 'exceptions.TypeError'>: 'NoneType' object is not callable
