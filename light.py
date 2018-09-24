@@ -3,7 +3,7 @@ from time import sleep             # lets us have a delay
 
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 GPIO.setup(27, GPIO.OUT)
-GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output 
+GPIO.setup(21, GPIO.OUT)           # set GPIO24 as an output 
 from flask import Flask
 from flask import render_template
 app = Flask(__name__)
@@ -20,12 +20,12 @@ def desligapc():
 
 @app.route('/liga')
 def liga():
-    GPIO.output(17, 1)
+    GPIO.output(21, 1)
     return "Liga"
 
 @app.route('/desliga')
 def desliga():
-    GPIO.output(17, 0)
+    GPIO.output(21, 0)
     return "Desliga"
 
 
