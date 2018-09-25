@@ -12,6 +12,16 @@ import netifaces as nif
 
 app = Flask(__name__)
 
+ips = dict()
+
+ips['Leandro'] = list()
+ips['Leandro'].append('192.168.0.245')
+ips['Leandro'].append('192.168.0.152')
+
+ips['Eliete'] = list()
+ips['Eliete'].append('192.168.0.221')
+
+
 
 
 

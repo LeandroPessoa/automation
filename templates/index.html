@@ -38,7 +38,7 @@
 	</span><br>Abre garagem</a>
 </div>
   	</div>
-  	
+  	<input type="text" name="enter" class="enter" value="" id="nome"/>
   	
   	
 	
@@ -63,12 +63,15 @@
 
 
 function portaosocial(){
-	$.get("http://rasp:5000/portaosocial");
+  var nome = $('#nome');
+	$.get("http://rasp:5000/portaosocial/"+nome);
 
 }
 
 function portaogaragem(){
-	$.get("http://rasp:5000/portaogaragem");
+  var nome = $('#nome');
+
+	$.get("http://rasp:5000/portaogaragem/"+nome);
 
 }
 
