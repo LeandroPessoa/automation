@@ -8,7 +8,7 @@ GPIO.setup(22, GPIO.OUT)           # set GPIO24 as an output
 
 GPIO.output(27, 1)
 GPIO.output(17, 1)
-GPIO.output(22, 1)
+
 
 from flask import Flask
 from flask import render_template
