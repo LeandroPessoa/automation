@@ -2,10 +2,10 @@ import RPi.GPIO as GPIO            # import RPi.GPIO module
 from time import sleep             # lets us have a delay  
 
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
-GPIO.setup(25, GPIO.OUT)
+GPIO.setup(27, GPIO.OUT)
 GPIO.setup(21, GPIO.OUT)           # set GPIO24 as an output 
 GPIO.output(27, 1)
-GPIO.output(25, 1)
+GPIO.output(21, 1)
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -31,9 +31,9 @@ def portaosocial(nome):
 
     try:
         if str(request.remote_addr) in ips[nome]:
-            GPIO.output(25, 0)
+            GPIO.output(21, 0)
             sleep(3)
-            GPIO.output(25, 1)
+            GPIO.output(21, 1)
             return "portao"
     except:
         return "Acesso Negado!"
