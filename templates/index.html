@@ -40,7 +40,12 @@
 <div class="col-sm-6">
   <a onclick="ligaluz();" href="#"><span class="fa fa-bolt fa-4x">
   
-  </span><br>Liga/Desliga luz</a>
+  </span><br>Liga luz</a>
+</div>
+<div class="col-sm-6">
+  <a onclick="desligaluz();" href="#"><span class="fa fa-bolt fa-4x">
+  
+  </span><br>Desliga luz</a>
 </div>
   	</div>
   	<input type="text" name="enter" class="enter" value="" id="nome"/>
@@ -96,7 +101,27 @@ function portaogaragem(){
 
 function ligaluz()
 {
-  alert("A implementar!");
+  $.get("http://rasp:5000/ligaluz/"+nome.val(),function(text) {
+  msg = text;
+  if(msg == "Acesso Negado!")
+  {
+  alert(msg);
+    
+  }
+});
+
+}
+
+function desligaluz()
+{
+  $.get("http://rasp:5000/ligaluz/"+nome.val(),function(text) {
+  msg = text;
+  if(msg == "Acesso Negado!")
+  {
+  alert(msg);
+    
+  }
+});
 
 }
 

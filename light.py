@@ -4,8 +4,12 @@ from time import sleep             # lets us have a delay
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 GPIO.setup(27, GPIO.OUT)
 GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output 
+GPIO.setup(22, GPIO.OUT)           # set GPIO24 as an output 
+
 GPIO.output(27, 1)
 GPIO.output(17, 1)
+GPIO.output(22, 1)
+
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -54,6 +58,32 @@ def portaogaragem(nome):
     except:
         return "Acesso Negado!"
 
+@app.route('/ligaluz/<nome>')
+def ligaluz(nome):
+
+    try:
+
+        
+        if str(request.remote_addr) in ips[nome]:
+            GPIO.output(22, 0)
+            
+        return "ligaluz"
+    except:
+        return "Acesso Negado!"
+
+@app.route('/desligaluz/<nome>')
+def desligaluz(nome):
+
+    try:
+
+        
+        if str(request.remote_addr) in ips[nome]:
+            GPIO.output(22, 1)
+            
+        return "desligaluz"
+    except:
+        return "Acesso Negado!"
+    
     
 
 
