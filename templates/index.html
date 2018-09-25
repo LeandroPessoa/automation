@@ -74,7 +74,7 @@
 
 function portaosocial(){
   var nome = $('#nome');
-	$.get("http://rasp:5000/portaosocial/"+nome.val(), function(text) {
+	$.get("http://portao:5000/portaosocial/"+nome.val(), function(text) {
   msg = text;
   if(msg == "Acesso Negado!")
   {
@@ -88,7 +88,7 @@ function portaosocial(){
 function portaogaragem(){
   var nome = $('#nome');
 
-	$.get("http://rasp:5000/portaogaragem/"+nome.val(),function(text) {
+	$.get("http://portao:5000/portaogaragem/"+nome.val(),function(text) {
   msg = text;
   if(msg == "Acesso Negado!")
   {
@@ -102,7 +102,7 @@ function portaogaragem(){
 function ligaluz()
 {
   var nome = $('#nome');
-  $.get("http://rasp:5000/ligaluz/"+nome.val(),function(text) {
+  $.get("http://portao:5000/ligaluz/"+nome.val(),function(text) {
   msg = text;
   if(msg == "Acesso Negado!")
   {
@@ -116,7 +116,7 @@ function ligaluz()
 function desligaluz()
 {
   var nome = $('#nome');
-  $.get("http://rasp:5000/desligaluz/"+nome.val(),function(text) {
+  $.get("http://portao:5000/desligaluz/"+nome.val(),function(text) {
   msg = text;
   if(msg == "Acesso Negado!")
   {
