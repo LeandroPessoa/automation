@@ -101,6 +101,7 @@ function portaogaragem(){
 
 function ligaluz()
 {
+  var nome = $('#nome');
   $.get("http://rasp:5000/ligaluz/"+nome.val(),function(text) {
   msg = text;
   if(msg == "Acesso Negado!")
@@ -114,7 +115,8 @@ function ligaluz()
 
 function desligaluz()
 {
-  $.get("http://rasp:5000/ligaluz/"+nome.val(),function(text) {
+  var nome = $('#nome');
+  $.get("http://rasp:5000/desligaluz/"+nome.val(),function(text) {
   msg = text;
   if(msg == "Acesso Negado!")
   {
