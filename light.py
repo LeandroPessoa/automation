@@ -46,9 +46,9 @@ def portaogaragem(nome):
 
         
         if str(request.remote_addr) in ips[nome]:
-            #GPIO.output(27, 0)
+            GPIO.output(27, 0)
             sleep(1)
-            #GPIO.output(27, 1)
+            GPIO.output(27, 1)
         return "garagem"
     except:
         return "Acesso Negado!"
