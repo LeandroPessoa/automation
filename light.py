@@ -32,7 +32,7 @@ def portaosocial(nome):
     try:
         if str(request.remote_addr) in ips[nome]:
             GPIO.output(17, 0)
-            sleep(3)
+            sleep(1)
             GPIO.output(17, 1)
             return "portao"
     except:
