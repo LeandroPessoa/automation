@@ -60,11 +60,9 @@ def portaogaragem(nome):
 @app.route("/")
 def hello():
 
-     try:
-        if str(request.remote_addr) in ips[nome]:
-            return render_template('index.html')
-    except:
-        return "Acesso Negado!"
+
+    return render_template('index.html')
+ 
 
    
     
