@@ -10,8 +10,10 @@ app = Flask(__name__)
 
 @app.route('/portaosocial')
 def portaosocial():
-    GPIO.output(27, 0)
-    return "Liga"
+    GPIO.output(21, 0)
+    sleep(3)
+    GPIO.output(21, 1)
+    return "portao"
 
 @app.route('/portaogaragem')
 def portaogaragem():
@@ -19,7 +21,7 @@ def portaogaragem():
     sleep(1)
     GPIO.output(27, 1)
 
-    return "Desliga"
+    return "garagem"
 
 
 
