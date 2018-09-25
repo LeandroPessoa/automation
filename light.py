@@ -25,29 +25,49 @@ ips['Eliete'].append('192.168.0.221')
 
 
 
-@app.route('/portaosocial')
-def portaosocial():
-    GPIO.output(21, 0)
-    sleep(3)
-    GPIO.output(21, 1)
-    return "portao"
+@app.route('/portaosocial/<nome>')
+def portaosocial(nome):
 
-@app.route('/portaogaragem')
-def portaogaragem():
-    #GPIO.output(27, 0)
-    print(request.remote_addr)
+    try:
+        if str(request.remote_addr) in ips[nome]:
+            GPIO.output(21, 0)
+            sleep(3)
+            GPIO.output(21, 1)
+            return "portao"
+    except:
+        return "Acesso Negado!"
 
-    sleep(1)
-    #GPIO.output(27, 1)
+    
 
-    return "garagem"
+@app.route('/portaogaragem/<nome>')
+def portaogaragem(nome):
+
+    try:
+
+        
+        if str(request.remote_addr) in ips[nome]:
+            #GPIO.output(27, 0)
+            sleep(1)
+            #GPIO.output(27, 1)
+        return "garagem"
+    except:
+        return "Acesso Negado!"
+
+    
 
 
 
 @app.route("/")
-def hello():  
+def hello():
+
+     try:
+        if str(request.remote_addr) in ips[nome]:
+            return render_template('index.html')
+    except:
+        return "Acesso Negado!"
+
    
-    return render_template('index.html')
+    
 
 
 
