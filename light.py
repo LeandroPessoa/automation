@@ -4,6 +4,7 @@ from time import sleep             # lets us have a delay
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 GPIO.setup(27, GPIO.OUT)
 GPIO.setup(21, GPIO.OUT)           # set GPIO24 as an output 
+GPIO.output(27, 1)
 from flask import Flask
 from flask import render_template
 app = Flask(__name__)
@@ -17,9 +18,9 @@ def portaosocial():
 
 @app.route('/portaogaragem')
 def portaogaragem():
-    GPIO.output(27, 0)
+    #GPIO.output(27, 0)
     sleep(1)
-    GPIO.output(27, 1)
+    #GPIO.output(27, 1)
 
     return "garagem"
 
