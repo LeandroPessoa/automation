@@ -35,7 +35,12 @@
 <div class="col-sm-6">
 	<a onclick="portaogaragem();" href="#"><span class="fa fa-bolt fa-4x">
   
-	</span><br>Abre garagem</a>
+	</span><br>Abre/Fecha garagem</a>
+</div>
+<div class="col-sm-6">
+  <a onclick="ligaluz();" href="#"><span class="fa fa-bolt fa-4x">
+  
+  </span><br>Liga/Desliga luz</a>
 </div>
   	</div>
   	<input type="text" name="enter" class="enter" value="" id="nome"/>
@@ -69,7 +74,7 @@ function portaosocial(){
   if(msg == "Acesso Negado!")
   {
   alert(msg);
-    
+
   }
 });
 
@@ -86,6 +91,12 @@ function portaogaragem(){
     
   }
 });
+
+}
+
+function ligaluz()
+{
+  alert("A implementar!");
 
 }
 
