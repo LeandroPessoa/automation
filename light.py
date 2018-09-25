@@ -8,28 +8,19 @@ from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 
-@app.route('/pcliga')
-def ligapc():
+@app.route('/portaosocial')
+def portaosocial():
     GPIO.output(27, 0)
     return "Liga"
 
-@app.route('/pcdesliga')
-def desligapc():
+@app.route('/portaogaragem')
+def portaogaragem():
     GPIO.output(27, 0)
     sleep(1)
     GPIO.output(27, 1)
 
     return "Desliga"
 
-@app.route('/liga')
-def liga():
-    GPIO.output(21, 1)
-    return "Liga"
-
-@app.route('/desliga')
-def desliga():
-    GPIO.output(21, 0)
-    return "Desliga"
 
 
 @app.route("/")

@@ -30,13 +30,12 @@
   	
   	<div class="row">
 <div class="col-sm-6">
-	<a onclick="ligapc();" href="#"><i class="fa fa-bolt fa-4x" aria-hidden="true"></i><br>Abre Garagem</a>
+	<a onclick="portaosocial();" href="#"><i class="fa fa-bolt fa-4x" aria-hidden="true"></i><br>Abre portão</a>
 </div>
 <div class="col-sm-6">
-	<a onclick="desligapc();" href="#"><span class="fa-stack fa-2x">
-  <i class="fa fa-bolt fa-stack-1x"></i>
-  <i class="fa fa-ban fa-stack-2x text-danger"></i> 
-	</span><br>Abre portão</a>
+	<a onclick="portaogaragem();" href="#"><span class="fa-stack fa-2x">
+  
+	</span><br>Abre garagem</a>
 </div>
   	</div>
   	
@@ -61,23 +60,15 @@
 
   <script>
 
-function ligaluz(){
-	$.get("http://rasp:5000/liga");
+
+
+function portaosocial(){
+	$.get("http://rasp:5000/portaosocial");
 
 }
 
-function desligaluz(){
-	$.get("http://rasp:5000/desliga");
-
-}
-
-function ligapc(){
-	$.get("http://rasp:5000/pcliga");
-
-}
-
-function desligapc(){
-	$.get("http://rasp:5000/pcdesliga");
+function portaogaragem(){
+	$.get("http://rasp:5000/portaogaragem");
 
 }
 
