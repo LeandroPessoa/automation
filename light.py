@@ -15,9 +15,9 @@ def ligapc():
 
 @app.route('/pcdesliga')
 def desligapc():
-    GPIO.output(27, 1)
-    sleep(1)
     GPIO.output(27, 0)
+    sleep(1)
+    GPIO.output(27, 1)
 
     return "Desliga"
 
