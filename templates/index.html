@@ -64,14 +64,14 @@
 
 function portaosocial(){
   var nome = $('#nome');
-	$.get("http://rasp:5000/portaosocial/"+nome);
+	$.get("http://rasp:5000/portaosocial/"+nome.val());
 
 }
 
 function portaogaragem(){
   var nome = $('#nome');
 
-	$.get("http://rasp:5000/portaogaragem/"+nome);
+	$.get("http://rasp:5000/portaogaragem/"+nome.val());
 
 }
 
