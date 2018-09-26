@@ -40,6 +40,7 @@ def portaosocial(nome):
 
     try:
         if str(request.remote_addr) in ips[nome]:
+            GPIO.setup(17, GPIO.OUT)
             GPIO.output(17, 0)
             sleep(1)
             GPIO.output(17, 1)
@@ -53,7 +54,7 @@ def portaosocial(nome):
 def portaogaragem(nome):
 
     try:
-        GPIO.setup(17, GPIO.OUT)           #portao
+                   #portao
         
         if str(request.remote_addr) in ips[nome]:
             GPIO.output(27, 0)
