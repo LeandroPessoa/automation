@@ -4,11 +4,10 @@ from time import sleep             # lets us have a delay
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 
 
-GPIO.setup(27, GPIO.OUT)           #garagem
 
 GPIO.setup(22, GPIO.OUT)           #luz
 
-GPIO.output(27, 1)
+
 #GPIO.output(17, 1)
 GPIO.output(22, 1)
 
@@ -57,9 +56,10 @@ def portaogaragem(nome):
                    #portao
         
         if str(request.remote_addr) in ips[nome]:
-            GPIO.output(27, 0)
-            sleep(1)
+            GPIO.setup(27, GPIO.OUT)           #garagem
             GPIO.output(27, 1)
+            sleep(1)
+            GPIO.output(27, 0)
         return "garagem"
     except:
         return "Acesso Negado!"
