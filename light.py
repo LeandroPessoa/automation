@@ -26,6 +26,8 @@ ips = dict()
 ips['Leandro'] = list()
 ips['Leandro'].append('192.168.0.245')
 ips['Leandro'].append('192.168.0.152')
+ips['Leandro'].append('192.168.0.192')
+
 
 ips['Eliete'] = list()
 ips['Eliete'].append('192.168.0.221')
