@@ -5,11 +5,11 @@ GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD
 
 
 GPIO.setup(27, GPIO.OUT)           #garagem
-GPIO.setup(17, GPIO.OUT)           #portao
+
 GPIO.setup(22, GPIO.OUT)           #luz
 
 GPIO.output(27, 1)
-GPIO.output(17, 1)
+#GPIO.output(17, 1)
 GPIO.output(22, 1)
 
 
@@ -53,7 +53,7 @@ def portaosocial(nome):
 def portaogaragem(nome):
 
     try:
-
+        GPIO.setup(17, GPIO.OUT)           #portao
         
         if str(request.remote_addr) in ips[nome]:
             GPIO.output(27, 0)
