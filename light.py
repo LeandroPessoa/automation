@@ -3,15 +3,12 @@ from time import sleep             # lets us have a delay
 
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 
-GPIO.output(27, 0)
-GPIO.output(17, 0)
-GPIO.output(22, 0)
 
 GPIO.setup(27, GPIO.OUT)           #garagem
 GPIO.setup(17, GPIO.OUT)           #portao
 GPIO.setup(22, GPIO.OUT)           #luz
 
-GPIO.output(27, 0)
+GPIO.output(27, 1)
 GPIO.output(17, 0)
 GPIO.output(22, 0)
 
