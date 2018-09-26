@@ -8,7 +8,7 @@ GPIO.setup(27, GPIO.OUT)           #garagem
 GPIO.setup(17, GPIO.OUT)           #portao
 GPIO.setup(22, GPIO.OUT)           #luz
 
-GPIO.output(27, 0)
+GPIO.output(27, 1)
 GPIO.output(17, 1)
 GPIO.output(22, 1)
 
