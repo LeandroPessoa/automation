@@ -6,8 +6,11 @@ GPIO.setup(27, GPIO.OUT)
 GPIO.setup(17, GPIO.OUT)           # set GPIO24 as an output 
 GPIO.setup(22, GPIO.OUT)           # set GPIO24 as an output 
 
-#GPIO.output(27, 1)
-#GPIO.output(17, 1)
+GPIO.output(27, 0)
+GPIO.output(17, 0)
+GPIO.output(22, 1)
+
+
 
 
 from flask import Flask
