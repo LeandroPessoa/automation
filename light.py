@@ -35,6 +35,10 @@ ips['Eliete'].append('192.168.0.221')
 ips['Garagem'] = list()
 ips['Garagem'].append('192.168.0.104')
 
+ips['Rangel'] = list()
+ips['Rangel'].append('192.168.0.102')
+
+
 
 
 
