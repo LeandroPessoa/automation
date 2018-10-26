@@ -26,38 +26,35 @@
   	<div class="col-sm-4"></div>
   <div class="col-sm-4">
   	<center>
-  		<div class="row">
 
-  	<div class="col-sm-6">
-  		<a onclick="ligaluz();" href="#"><i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i><br>Ligar Luz</a>
-  	<br>
-  	</div>
-  	<div class="col-sm-6">
-  		<a onclick="desligaluz();" href="#"><span class="fa-stack fa-2x">
-  <i class="fa fa-lightbulb-o fa-stack-1x"></i>
-  <i class="fa fa-ban fa-stack-2x text-danger"></i> 
-	</span><br>Desligar Luz</a>
-  	<br>
-
-  	  <br>
-  	</div>
-  	</div>
   	
   	<div class="row">
 <div class="col-sm-6">
-	<a onclick="ligapc();" href="#"><i class="fa fa-bolt fa-4x" aria-hidden="true"></i><br>Ligar Computador</a>
+	<a onclick="portaosocial();" href="#"><i class="fa fa-bolt fa-4x" aria-hidden="true"></i><br>Abre portão</a>
 </div>
 <div class="col-sm-6">
-	<a onclick="desligapc();" href="#"><span class="fa-stack fa-2x">
-  <i class="fa fa-bolt fa-stack-1x"></i>
-  <i class="fa fa-ban fa-stack-2x text-danger"></i> 
-	</span><br>Desligar Computador</a>
+	<a onclick="portaogaragem();" href="#"><span class="fa fa-bolt fa-4x">
+  
+	</span><br>Abre/Fecha garagem</a>
+</div>
+<div class="col-sm-6">
+  <a onclick="ligaluz();" href="#"><span class="fa fa-bolt fa-4x">
+  
+  </span><br>Liga luz</a>
+</div>
+<div class="col-sm-6">
+  <a onclick="desligaluz();" href="#"><span class="fa fa-bolt fa-4x">
+  
+  </span><br>Desliga luz</a>
 </div>
   	</div>
-  	
-  	
-  	
-	
+  	<input type="text" name="enter" class="enter" value="" id="nome"/>
+    <br><br>
+  	<div class="row">
+  	<div class="col-sm-12">
+    <img src={{ url_for('static',filename="img/image.jpeg")}}>
+    </div>
+	 </div>
   
   	
   </center>
@@ -76,23 +73,60 @@
 
   <script>
 
-function ligaluz(){
-	$.get("http://192.168.0.106:5000/liga");
+
+
+function portaosocial(){
+  var nome = $('#nome');
+	$.get("http://192.168.0.157:5000/portaosocial/"+nome.val(), function(text) {
+  msg = text;
+  if(msg == "Acesso Negado!")
+  {
+  alert(msg);
+
+  }
+});
 
 }
 
-function desligaluz(){
-	$.get("http://192.168.0.106:5000/desliga");
+function portaogaragem(){
+  var nome = $('#nome');
+
+	$.get("http://192.168.0.157:5000/portaogaragem/"+nome.val(),function(text) {
+  msg = text;
+  if(msg == "Acesso Negado!")
+  {
+  alert(msg);
+    
+  }
+});
 
 }
 
-function ligapc(){
-	$.get("http://192.168.0.106:5000/pcliga");
+function ligaluz()
+{
+  var nome = $('#nome');
+  $.get("http://192.168.0.157:5000/ligaluz/"+nome.val(),function(text) {
+  msg = text;
+  if(msg == "Acesso Negado!")
+  {
+  alert(msg);
+    
+  }
+});
 
 }
 
-function desligapc(){
-	$.get("http://192.168.0.106:5000/pcdesliga");
+function desligaluz()
+{
+  var nome = $('#nome');
+  $.get("http://192.168.0.157:5000/desligaluz/"+nome.val(),function(text) {
+  msg = text;
+  if(msg == "Acesso Negado!")
+  {
+  alert(msg);
+    
+  }
+});
 
 }
 
