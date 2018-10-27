@@ -50,12 +50,12 @@ ips['Flavio'].append('192.168.0.107')
 def portaosocial(nome):
 
     try:
-        if str(request.remote_addr) in ips[nome]:
-            GPIO.setup(17, GPIO.OUT)
-            GPIO.output(17, 0)
-            sleep(1)
-            GPIO.output(17, 1)
-            return "portao"
+        #if str(request.remote_addr) in ips[nome]:
+        GPIO.setup(17, GPIO.OUT)
+        GPIO.output(17, 0)
+        sleep(1)
+        GPIO.output(17, 1)
+        return "portao"
     except:
         return "Acesso Negado!"
 
@@ -67,11 +67,11 @@ def portaogaragem(nome):
     try:
                    #portao
         
-        if str(request.remote_addr) in ips[nome]:
-            GPIO.setup(27, GPIO.OUT)           #garagem
-            GPIO.output(27, 1)
-            sleep(1)
-            GPIO.output(27, 0)
+        #if str(request.remote_addr) in ips[nome]:
+        GPIO.setup(27, GPIO.OUT)           #garagem
+        GPIO.output(27, 1)
+        sleep(1)
+        GPIO.output(27, 0)
         return "garagem"
     except:
         return "Acesso Negado!"
@@ -82,8 +82,8 @@ def ligaluz(nome):
     try:
 
         
-        if str(request.remote_addr) in ips[nome]:
-            GPIO.output(22, 0)
+        #if str(request.remote_addr) in ips[nome]:
+        GPIO.output(22, 0)
             
         return "ligaluz"
     except:
@@ -95,8 +95,8 @@ def desligaluz(nome):
     try:
 
         
-        if str(request.remote_addr) in ips[nome]:
-            GPIO.output(22, 1)
+        #if str(request.remote_addr) in ips[nome]:
+        GPIO.output(22, 1)
             
         return "desligaluz"
     except:
